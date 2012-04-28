@@ -1,4 +1,4 @@
-W.A.Y. - Where are You?
+W.A.Y. - Where are You? [![BuildStatus](https://secure.travis-ci.org/calebhc/way.png?branch=master)](http://travis-ci.org/calebhc/way)
 =======================
 
 Find partials in your Rails app easily! :D
