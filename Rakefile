@@ -9,6 +9,7 @@ task :all_specs do
     directory_name = File.dirname rakefile
     sh <<-CMD
       cd #{directory_name}
+      bundle install
       bundle exec rake
     CMD
   end

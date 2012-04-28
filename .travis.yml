@@ -1,6 +1,3 @@
 language: ruby
 rvm:
   - 1.9.2
-gemfile:
-  - spec/rails3/Gemfile
-  - spec/rails2/Gemfile
