@@ -1,9 +1,7 @@
-W.A.Y.
-======
-Where are You?
---------------
+W.A.Y. - Where are You?
+=======================
 
-Find partials in your Rails app super easy! :D
+Find partials in your Rails app easily! :D
 
 Install
 -------
@@ -29,6 +27,11 @@ Use
 2. Hit enter and your partials will now display their full path
 
 ![preview](https://s3.amazonaws.com/kittypizza/way-preview.png)
+
+Tests
+=====
+
+To run the entire test suite, just run `rake`
 
 Supported Rails versions
 ------------------------

@@ -1,0 +1,10 @@
+require 'rake'
+require 'spec/rake/spectask'
+
+desc 'Default: Run all the specs for rails 2'
+task :default => :spec
+
+desc 'Run all the specs for rails 2'
+Spec::Rake::SpecTask.new do |task|
+  task.spec_files = FileList['**/*_spec.rb']
+end
