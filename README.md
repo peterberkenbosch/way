@@ -29,9 +29,9 @@ Use
 ![preview](https://s3.amazonaws.com/kittypizza/way-preview.png)
 
 Tests
-=====
+-----
 
-To run the entire test suite, just run `rake`
+To run the entire test suite, just run `rake` from your shell.
 
 Supported Rails versions
 ------------------------
