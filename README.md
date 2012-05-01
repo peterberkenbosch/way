@@ -12,7 +12,7 @@ gem install way
 or add the following line to Gemfile:
 
 ```shell
-gem 'way'
+gem 'way', :group => :development
 ```
 
 and run `bundle install` from your shell.
