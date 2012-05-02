@@ -33,4 +33,11 @@ describe TestsController do
     get :index
     response.body.should include "I'm a partial"
   end
+
+  context 'when the controller object is nil' do
+    it 'does not raise an error' do
+      ActionView::Base.class_eval { def controller; nil end; }
+      expect { get :index }.not_to raise_error
+    end
+  end
 end
