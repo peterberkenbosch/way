@@ -1,28 +1,15 @@
 module ActionView
   class PartialRenderer
-    def render_partial
-      locals, view, block = @locals, @view, @block
-      object, as = @object, @variable
-
-      if !block && (layout = @options[:layout])
-        layout = find_template(layout)
-      end
-
-      object ||= locals[as]
-      locals[as] = object
-
-      content = @template.render(view, locals) do |*name|
-        view._layout_for(*name, &block)
-      end
-
-      content = layout.render(view, locals){ content } if layout
-
+    def way_render_partial
+      content = render_partial_copy
       if @view.controller && @view.controller.params.has_key?('_way')
         content << "#{@template.inspect}"
       end
-
       content
     end
+    
+    alias_method :render_partial_copy, :render_partial
+    alias_method :render_partial, :way_render_partial
   end
 
   class Base
