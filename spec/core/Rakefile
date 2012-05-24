@@ -1,0 +1,10 @@
+require 'rake'
+require 'rspec/core/rake_task'
+
+desc 'Default: Run all the specs for core'
+task :default => :spec
+
+desc 'Run all the specs for core'
+RSpec::Core::RakeTask.new(:spec) do |task|
+  task.pattern = '*_spec.rb'
+end
