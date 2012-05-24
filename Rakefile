@@ -5,6 +5,8 @@ task :default => :all_specs
 
 desc 'Run all the specs!'
 task :all_specs do
+  sh 'bundle exec rspec spec/helpers'
+  
   Dir['spec/rails*/Rakefile'].each do |rakefile|
     directory_name = File.dirname rakefile
     sh <<-CMD

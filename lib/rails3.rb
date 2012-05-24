@@ -1,9 +1,11 @@
 module ActionView
   class PartialRenderer
+    include Way
+    
     def way_render_partial
       partial_content = render_partial_copy
 
-      if @view.controller && @view.controller.params.has_key?('_way')
+      if show_partial_path? @view.controller
         partial_content << "#{@template.inspect}"
       end
 

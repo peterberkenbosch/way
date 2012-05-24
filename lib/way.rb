@@ -1,3 +1,5 @@
+require 'helpers'
+
 if Rails::VERSION::STRING.to_i > 2
   require 'rails3'
 else

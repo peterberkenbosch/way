@@ -33,10 +33,4 @@ describe TestsController do
     get :index
     response.body.should include "I'm a partial"
   end
-
-  context 'when the controller object is nil' do
-    it 'does not raise an error' do
-      pending
-    end
-  end
 end
