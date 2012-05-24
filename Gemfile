@@ -1,3 +1,6 @@
 source :rubygems
 
-gem 'rspec', :group => :test
+group :test do
+ gem 'rake'
+ gem 'rspec'
+end
